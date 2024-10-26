@@ -1,0 +1,279 @@
+/* General Styles */
+body,
+h2,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+
+}
+
+body {
+  background-color: white;
+}
+
+/* Top Strip */
+.top-strip {
+    background-color: #802F34;
+    color: white;
+    text-align: right;
+    padding: 5px;
+    padding-right: 50px; /* Adds 50px space from the right side */
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  
+
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #802F34;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo img {
+    width: 110px;
+    height: 110px;
+    margin-left: 50px; /* Adds a margin to the left side of the logo */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio within the set dimensions */
+  }
+  
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #802F34;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: white;
+  color: #802F34;
+  border-bottom: 2px solid #802F34;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Landing Page */
+.landing-page {
+  position: relative;
+  text-align: center;
+}
+
+.landing-page img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.cta-button {
+  position: absolute;
+  right: 25%;
+  top: 70%;
+  transform: translateY(50%);
+}
+
+.cta-button button {
+  padding: 10px 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+.featured-products {
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Featured Header Section */
+.featured-header {
+  background-color: #802F34;
+  padding: 40px 0;
+  margin: 0 auto;
+  margin-top: -80px;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.featured-header h2 {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* Slider Container */
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 80%;
+  margin: 150px auto 20px;
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0s linear;
+  will-change: transform;
+}
+
+.slider img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Winter Wardrobe Refresh Section */
+.winter-wardrobe {
+  background-image: url("Welcome to TrendAura (2).png");
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Adjustable height */
+  position: relative;
+  color: maroon;
+  padding: 100 0 0;
+}
+
+/* Header Strip for Winter Wardrobe */
+.winter-header {
+  background-color: #802F34;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Text Container */
+.winter-text {
+  max-width: 500px;
+ 
+  padding: 20px;
+  border-radius: 8px;
+  margin: 150px auto 0; /* Centered and positioned below header */
+  text-align: left;
+  margin-left: 60px; /* Positioned in left column */
+    margin-top: 150px; /* Adjust this value to set space below the header strip */
+    text-align: left; /* Left aligned text */
+    position: relative;
+}
+
+ /*Optional: Adding Top Padding to Text Container*/ 
+.winter-text {
+  padding-top: 200px;  /*Add this for extra space within the text container */
+}
+
+
+/* Heading Styles */
+.winter-wardrobe h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.winter-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: maroon;
+  margin-bottom: 15px;
+}
+
+.winter-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: maroon;
+  margin-bottom: 15px;
+}
+
+.winter-wardrobe button {
+  padding: 10px 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Footer */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #802F34, #6B232A);
+  color: white;
+  padding: 20px 30px;
+  border-top: 3px solid #FFD700;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
