@@ -20,7 +20,7 @@ function slideImages() {
       slider.style.transform = 'translateX(0)';
     }, 500);
 
-    
+    // Re-enable transition after the reset
     setTimeout(() => {
       slider.style.transition = 'transform 0s linear';
     }, 600);
