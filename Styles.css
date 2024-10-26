@@ -1,4 +1,4 @@
-/* General Styles */
+
 body,
 h2,
 p,
@@ -14,20 +14,20 @@ body {
   background-color: white;
 }
 
-/* Top Strip */
+
 .top-strip {
     background-color: #802F34;
     color: white;
     text-align: right;
     padding: 5px;
-    padding-right: 50px; /* Adds 50px space from the right side */
+    padding-right: 50px; 
     padding-top: 10px;
     font-size: 14px;
   }
   
 
 
-/* Header */
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -40,8 +40,8 @@ body {
 .logo img {
     width: 110px;
     height: 110px;
-    margin-left: 50px; /* Adds a margin to the left side of the logo */
-    object-fit: contain; /* Ensures the image maintains its aspect ratio within the set dimensions */
+    margin-left: 50px; 
+    object-fit: contain; 
   }
   
 
@@ -116,7 +116,7 @@ body {
   text-align: center;
 }
 
-/* Featured Header Section */
+
 .featured-header {
   background-color: #802F34;
   padding: 40px 0;
@@ -133,7 +133,7 @@ body {
   margin: 0;
 }
 
-/* Slider Container */
+
 .slider-container {
   overflow: hidden;
   position: relative;
@@ -161,7 +161,7 @@ body {
 
 
 
-/* Winter Wardrobe Refresh Section */
+
 .winter-wardrobe {
   background-image: url("Welcome to TrendAura (2).png");
   background-size: cover;
@@ -172,7 +172,7 @@ body {
   padding: 100 0 0;
 }
 
-/* Header Strip for Winter Wardrobe */
+
 .winter-header {
   background-color: #802F34;
   color: white;
@@ -187,27 +187,27 @@ body {
   z-index: 1;
 }
 
-/* Text Container */
+
 .winter-text {
   max-width: 500px;
  
   padding: 20px;
   border-radius: 8px;
-  margin: 150px auto 0; /* Centered and positioned below header */
+  margin: 150px auto 0; 
   text-align: left;
-  margin-left: 60px; /* Positioned in left column */
-    margin-top: 150px; /* Adjust this value to set space below the header strip */
-    text-align: left; /* Left aligned text */
+  margin-left: 60px; 
+    margin-top: 150px; 
+    text-align: left; 
     position: relative;
 }
 
- /*Optional: Adding Top Padding to Text Container*/ 
+  
 .winter-text {
-  padding-top: 200px;  /*Add this for extra space within the text container */
+  padding-top: 200px;  
 }
 
 
-/* Heading Styles */
+
 .winter-wardrobe h2 {
   font-size: 24px;
   text-align: center;
@@ -238,7 +238,7 @@ body {
   margin-top: 10px;
 }
 
-/* Footer */
+
 .main-footer {
   display: flex;
   justify-content: space-between;
