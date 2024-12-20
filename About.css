@@ -1,0 +1,488 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    padding: 0; /* Reset body padding */
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Top Strip */
+.top-strip {
+    background-color: #802F34;
+    color: white;
+    text-align: right;
+    padding: 5px 50px;
+    font-size: 14px;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #802F34;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 110px;
+    height: 110px;
+    margin-left: 50px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    background-color: #802F34;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #802F34;
+    border-bottom: 2px solid #802F34;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Landing Page */
+.landing-page {
+    position: relative;
+    text-align: center;
+}
+
+.landing-page img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* Full-width Section Strips */
+.header-strip {
+    background-color: #802F34;
+    color: white;
+    padding: 0; /* Reduced padding to make it closer to the top */
+    text-align: center;
+    font-size: 30px;
+    width: 100%; /* Ensures full width */
+    margin: 0;
+}
+
+/* Brand Story Section */
+/* Brand Story Section Header Strip */
+.brand-story {
+    position: relative; /* Ensure positioning context for child elements */
+    overflow: hidden; /* Hide any overflow to maintain layout */
+}
+
+.brand-story .header-strip {
+    background-color: #802F34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    width: 100%; /* Full width */
+    position: absolute; /* Change to absolute for better control */
+    top: 0; /* Align to top of the brand story section */
+    left: 0; /* Ensure it's aligned to the left */
+    z-index: 1; /* Keep it above other content */
+    margin: 0; /* Reset any margins */
+    margin-top: -10px;
+}
+
+/* Reset Body and Parent Container Styles */
+body {
+    margin: 0; /* Reset body margin */
+    padding: 0; /* Reset body padding */
+}
+/* Brand Story Section */
+.brand-story {
+    position: relative; /* Ensure positioning context */
+    padding-top: 60px; /* Add padding to push content down */
+}
+
+.brand-story .header-strip {
+    background-color: #802F34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    width: 100%; /* Full width */
+    position: absolute; /* Maintain absolute positioning */
+    top: 0; /* Align to top of the brand story section */
+    left: 0; /* Ensure it's aligned to the left */
+    z-index: 1; /* Keep it above other content */
+    margin: 0; /* Reset any margins */
+}
+
+/* Content Row */
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 80px; /* Add top padding to create space below header */
+}
+
+.text-column {
+    flex: 1;
+    color: maroon;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 100px; /* Adjusted margin */
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px; /* Margin to move image to the right */
+}
+
+.image-box {
+    width: 80%; /* Adjust width as needed */
+    max-width: 200px; /* Set a max-width for better control */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+/* Next Section (e.g., Why Choose Us) */
+.why-choose-us {
+    position: relative; /* Ensure positioning context */
+    padding-top: 60px; /* Add padding to push content down */
+}
+
+.why-choose-us .header-strip {
+    background-color: #802F34; /* Same background color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    width: 100%; /* Full width */
+    margin: 0; /* Reset margins */
+    position: relative; /* Maintain relative positioning */
+}
+
+/* Why Choose Us Content */
+.why-choose-us .content-row {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between items */
+    padding-top: 40px; /* Add padding for spacing */
+}
+
+/* Text Column */
+.why-choose-us .text-column {
+    flex: 1; /* Allow the text column to take available space */
+    color: maroon; /* Text color */
+    font-size: 16px; /* Font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-right: 150px; /* Move text 100px away from the right side */
+}
+
+/* Image Column */
+.why-choose-us .image-column {
+    flex: 1; /* Allow the image column to take available space */
+    display: flex; /* Flexbox for centering the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+    margin-left: -40px; /* Shift the image 40px to the left */
+}
+
+.why-choose-us .image-box {
+    width: 90%; /* Set the image box width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.why-choose-us .image-box img {
+    width: 100%; /* Ensure the image fits the box */
+    border-radius: 8px;
+}
+
+/* Footer */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #802F34, #6B232A);
+    color: white;
+    padding: 20px 30px;
+    border-top: 3px solid #FFD700;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#802F34 ;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 0px;
+    /* Top Strip */
+.top-strip {
+  background-color: #802F34;
+  color: white;
+  text-align: right;
+  padding: 5px;
+  padding-right: 50px; /* Adds 50px space from the right side */
+  padding-top: 10px;
+  font-size: 14px;
+}
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #802F34;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+    
+  .shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .shop {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .shop {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+  
+  .item {
+    border: 2px solid #802F34;
+    border-radius: 4px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+  }
+  
+  .bi-dash-lg {
+    color: red;
+  }
+  
+  .bi-plus-lg {
+    color: green;
+  }
+  
+  
+  
+  .text-center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .HomeBtn,
+  .checkout,
+  .removeAll {
+    background-color: #802F34;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .checkout {
+    background-color: green;
+  }
+  .removeAll {
+    background-color: red;
+  }
+  .bi-x-lg {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  
+  .cart-item {
+    border: 2px solid #802F34;
+    border-radius: 5px;
+    display: flex;
+  }
+  
+  .title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  
+  .title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-item-price {
+    background-color: #802F34;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+  
+
+
+
+/* Header */
+.main-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #802F34;
+color: white;
+padding: 0px 0px;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+  margin-left: -300px; /* Adds a margin to the left side of the logo */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio within the set dimensions */
+}
+
+
+.menu {
+display: flex;
+gap: 15px;
+}
+
+.menu a {
+padding: 8px 15px;
+color: white;
+text-decoration: none;
+background-color: #802F34;
+border: 1px solid white;
+border-radius: 5px;
+transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+background-color: white;
+color: #802F34;
+border-bottom: 2px solid #802F34;
+}
+
+.header-right {
+display: flex;
+gap: 10px;
+margin-right: 50px;
+}
+
+.header-right a {
+color: white;
+text-decoration: none;
+}
+  }  
